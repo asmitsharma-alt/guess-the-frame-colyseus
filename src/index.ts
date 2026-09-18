@@ -1,4 +1,4 @@
-import express from "express";
+import express, { Request, Response } from "express";
 import cors from "cors";
 import http from "http";
 import dotenv from "dotenv";
@@ -19,7 +19,7 @@ app.use(cors({
 app.use(express.json());
 
 // ── Health & Uptime Endpoints ──
-app.get("/health", (req, res) => {
+app.get("/health", (req: Request, res: Response) => {
   res.status(200).json({
     status: "healthy",
     game: "Scoopcast: Guess The Frame",
@@ -28,7 +28,7 @@ app.get("/health", (req, res) => {
   });
 });
 
-app.get("/ping", (req, res) => {
+app.get("/ping", (req: Request, res: Response) => {
   res.status(200).send("pong");
 });
 

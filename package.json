@@ -23,18 +23,18 @@
     "@colyseus/monitor": "^0.15.6",
     "@colyseus/schema": "^2.0.36",
     "@colyseus/ws-transport": "^0.15.3",
-    "colyseus": "^0.15.42",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.21.2"
-  },
-  "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
     "@types/node": "^20.14.9",
-    "colyseus.js": "^0.15.22",
-    "ts-node": "^10.9.2",
+    "colyseus": "^0.15.42",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
     "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "colyseus.js": "^0.15.22",
+    "ts-node": "^10.9.2"
   },
   "engines": {
     "node": ">=18.0.0"
